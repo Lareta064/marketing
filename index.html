@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Главная</title>
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="font/BauhausC/stylesheet.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Arimo:400,700&amp;amp;subset=cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <header class="header" id="scene">
+      <div class="layer layer__item1" data-depth="0.40"><img src="img/parallax/1.png" alt=""></div>
+      <div class="layer layer__item2" data-depth="0.80"><img src="img/parallax/2.png" alt=""></div>
+      <div class="layer layer__item3" data-depth="1"><img src="img/parallax/3.png" alt=""></div>
+      <div class="layer layer__item4" data-depth="0.40"><img src="img/parallax/4.png" alt=""></div>
+      <div class="layer layer__item5" data-depth="0.80"><img src="img/parallax/5.png" alt=""></div>
+      <div class="layer layer__item6" data-depth="1"><img src="img/parallax/6.png" alt=""></div>
+      <div class="menu">
+        <div class="menu-icon"> 
+          <div class="dash"> <span>&mdash; </span><span>&mdash; </span><span>&mdash;</span></div>
+        </div>
+        <p class="menu-paragraf">menu</p>
+        <nav class="disp-n disp-b" id="nav-menu"><a class="nav-menu__item menu-paragraf" href="#">link</a><a class="nav-menu__item menu-paragraf" href="#">link</a><a class="nav-menu__item menu-paragraf" href="#">link</a><a class="nav-menu__item menu-paragraf" href="#">link</a><a class="nav-menu__item menu-paragraf" href="#">link</a><a class="nav-menu__item menu-paragraf" href="#">link</a><a class="nav-menu__item menu-paragraf" href="#">link</a><a class="nav-menu__item menu-paragraf" href="#">link</a><a class="nav-menu__item menu-paragraf" href="#">link</a></nav>
+      </div>
+      <div class="header__top-content">
+        <div class="logo"><img class="img-fluid" src="img/icons/logo.png" alt="logo"></div>
+        <div class="header-contacts">
+          <div class="header-mail"><a class="contact-mail" href="#">Marketing-place@yandex.ru</a></div>
+          <div class="header-phone"><a class="contact-phone" href="#">8 953 512 777 0</a><a class="contact-phone" href="#">8 996 512 58 51</a></div>
+        </div>
+      </div>
+      <div class="header-center">
+        <h1 class="header-title ta-right">Marketing<span class="align-right">place</span><span class="text-vertical">веб-студия</span></h1>
+      </div>
+    </header>
+    <div class="block" id="offer">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-7 p-0">
+            <div class="offer-img"></div>
+          </div>
+          <div class="col-lg-5 p-0">
+            <div class="offer-content">
+              <p>готовы обсудить<br>возможности вашего<br>бизнеса уже сейчас?</p>
+              <form id="offer-form" action="php/mail.php" method="POST">
+                <input type="text" name="name" id="offer-form__name" placeholder="Name">
+                <input type="text" name="email" id="offer-form__email" placeholder="Email">
+                <button class="btn offer-btn" type="submit">оставить заявку</button>
+              </form>
+              <p class="mb-0 pb-3">или продолжите<br>смотреть дальше?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="libs/jquery/jquery-3.0.0.min.js"></script>
+    <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+    <script src="libs/parallax.min.js"></script>
+    <script src="js/vertical-menu.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
