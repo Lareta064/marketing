@@ -264,6 +264,66 @@
         </div>
       </div>
     </section>
+    <section class="cta text-center">
+      <h2 class="section-head">ОСТАЛИСЬ ВОПРОСЫ?<br>ЗАДАЙТЕ ИХ НАШЕМУ СПЕЦИАЛИСТУ</h2>
+      <div class="container">
+        <div class="contact-form cta-form" id="form_2" action="php/mail-cta.php" method="POST">
+          <input type="hidden" name="project_name" value="Marketing">
+          <input type="hidden" name="admin_email" value="lareta1@yandex.ru">
+          <input type="hidden" name="form_subject" value="Сообщение с сайта">
+          <div class="row">
+            <div class="col-md-6">
+              <input type="text" name="name" id="offer-form__name" placeholder="Name">
+            </div>
+            <div class="col-md-6">
+              <input type="text" name="email" id="offer-form__email" placeholder="Email">
+            </div>
+            <div class="col-md-6 offset-md-3">
+              <button class="btn offer-btn" id="cta-btn" type="submit">заполнить форму</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="map-block">
+      <div class="contact-window">
+        <ul class="map-contact">
+          <li class="contact-adress">
+            <p class="map-contact__title">Адрес</p>
+            <p class="map-contact__text"> г. Череповец, ул. Ленина, 50</p>
+          </li>
+          <li class="contact-phone">
+            <p class="map-contact__title">телефон</p>
+            <p class="map-contact__text">8 953 512 777 0 </p>
+          </li>
+          <li class="contact-email">
+            <p class="map-contact__title">E-MAIL</p>
+            <p class="map-contact__text"> Marketing-place@yandex.ru</p>
+          </li>
+        </ul>
+        <div class="social-icons"><a class="sprite sprite-vk" href="#"></a><a class="sprite sprite-facebook" href="#"></a><a class="sprite sprite-instagramm" href="#"></a></div>
+      </div>
+      <!-- карта с маркерами-->
+      <div id="map"></div>
+      <script>
+        function initMap() {
+        //var sokol = {lat: 55.7879405, lng: 37.680486900000005};
+        //var izm = {lat: 55.789556, lng: 37.74765000000002};
+        var center = {lat: 59.124700, lng: 37.928706};
+        var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 16,
+        center: center
+        });
+        
+        var marker = new google.maps.Marker({
+        position: center,
+        map: map,
+        title: "ул. Ленина, 50"
+        });
+        }
+      </script>
+      <script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvX6LBP5vPcv5WeKT3DurPtnQ1XIA50Ws&amp;callback=initMap"></script>
+    </section>
     <script src="libs/jquery/jquery-3.0.0.min.js"></script>
     <script src="libs/bootstrap/js/bootstrap.min.js"></script>
     <script src="libs/pagescroll2id/jquery.malihu.PageScroll2id.js"></script>
