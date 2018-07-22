@@ -38,21 +38,23 @@
       </div>
     </header>
     <section class="offer">
-      <div class="container-fluid">
-        <div class="row no-gutters">
-          <div class="col-lg-7 offer-img"></div>
-          <div class="col-lg-5">
-            <div class="offer-content">
-              <p>готовы обсудить<br>возможности вашего<br>бизнеса уже сейчас?</p>
-              <form class="contact-form" id="form_1" action="php/mail.php" method="POST">
-                <input type="hidden" name="project_name" value="Marketing">
-                <input type="hidden" name="admin_email" value="lareta1@yandex.ru">
-                <input type="hidden" name="form_subject" value="Сообщение с сайта">
-                <input type="text" name="name" id="offer-form__name" placeholder="Name">
-                <input type="text" name="email" id="offer-form__email" placeholder="Email">
-                <button class="btn offer-btn" type="submit">оставить заявку</button>
-              </form>
-              <p class="mb-0 pb-3">или продолжите<br>смотреть дальше?</p>
+      <div class="offer-block">
+        <div class="container-fluid">
+          <div class="row no-gutters">
+            <div class="col-lg-7 offer-img"></div>
+            <div class="col-lg-5">
+              <div class="offer-content">
+                <p>готовы обсудить<br>возможности вашего<br>бизнеса уже сейчас?</p>
+                <form class="contact-form" id="form_1" action="php/mail.php" method="POST">
+                  <input type="hidden" name="project_name" value="Marketing">
+                  <input type="hidden" name="admin_email" value="lareta1@yandex.ru">
+                  <input type="hidden" name="form_subject" value="Сообщение с сайта">
+                  <input type="text" name="name" id="offer-form__name" placeholder="Name">
+                  <input type="text" name="email" id="offer-form__email" placeholder="Email">
+                  <button class="btn offer-btn" type="submit">оставить заявку</button>
+                </form>
+                <p class="mb-0 pb-3">или продолжите<br>смотреть дальше?</p>
+              </div>
             </div>
           </div>
         </div>
@@ -303,7 +305,6 @@
         </ul>
         <div class="social-icons"><a class="sprite sprite-vk" href="#"></a><a class="sprite sprite-facebook" href="#"></a><a class="sprite sprite-instagramm" href="#"></a></div>
       </div>
-      <!-- карта с маркерами-->
       <div id="map"></div>
       <script>
         function initMap() {    
@@ -322,8 +323,56 @@
       </script>
       <script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvX6LBP5vPcv5WeKT3DurPtnQ1XIA50Ws&amp;callback=initMap"></script>
     </section>
-    <footer id="footer">
-      <div class="container"></div>
+    <footer class="d-none d-lg-block" id="footer">
+      <div class="container">
+        <div class="footer-content">
+          <!--column aboutus-->
+          <div class="column column-about">
+            <h4 class="column-title">компания					</h4>
+            <ul class="aboutus">
+              <li><a class="footer-link" href="#">О компании</a></li>
+              <li><a class="footer-link" href="#">Портфолио</a></li>
+              <li><a class="footer-link" href="#">Отзывы</a></li>
+              <li><a class="footer-link" href="#">Контакты</a></li>
+            </ul>
+          </div>
+          <!--column service-->
+          <div class="column column-service">
+            <h4 class="column-title">Услуги</h4>
+            <ul class="aboutus">
+              <li><a class="footer-link" href="#">Создание сайтов</a></li>
+              <li><a class="footer-link" href="#">Дизайн</a></li>
+              <li><a class="footer-link" href="#">SMM</a></li>
+              <li><a class="footer-link" href="#">SEO оптимизация</a></li>
+              <li><a class="footer-link" href="#">Yandex Direct</a></li>
+              <li><a class="footer-link" href="#">Google Adwords</a></li>
+              <li><a class="footer-link" href="#">E-mail маркетинг</a></li>
+            </ul>
+          </div>
+          <!--column contacts-->
+          <div class="column column-contact">
+            <h4 class="column-title">Контакты					</h4>
+            <ul class="aboutus pb-4">
+              <li>Адрес:&nbsp; г.&nbsp;Череповец,&nbsp;ул.&nbsp;Ленина,&nbsp;50</li>
+              <li>Тел:&nbsp;&nbsp;<a class="footer-link" href="tel:+79535127770">+7&nbsp;953&nbsp;512&nbsp;777&nbsp;0</a></li>
+              <li>Email:&nbsp;&nbsp;<a class="footer-link" href="mailto:Marketing-place@yandex.ru">Marketing-place@yandex.ru</a></li>
+            </ul>
+            <h4 class="column-title">наш прайс PDF</h4><a class="btn-link" href="#">Посмотреть</a>
+          </div>
+          <!--column form-->
+          <div class="column column-form">
+            <h4 class="column-title">ПОДПИСАТЬСЯ НА НАШУ РАССЫЛКУ</h4>
+            <form class="contact-form" id="form_3" action="php/mail-form3.php" method="POST">
+              <input type="hidden" name="project_name" value="Marketing">
+              <input type="hidden" name="admin_email" value="lareta1@yandex.ru">
+              <input type="hidden" name="form_subject" value="Заявка на подписку">
+              <input type="text" name="name" placeholder="Ваше имя">
+              <input type="text" name="email" placeholder="Ваш email">
+              <button class="btn subscription-btn" type="submit">Подписаться</button>
+            </form>
+          </div>
+        </div>
+      </div>
     </footer>
     <script src="libs/jquery/jquery-3.0.0.min.js"></script>
     <script src="libs/bootstrap/js/bootstrap.min.js"></script>
