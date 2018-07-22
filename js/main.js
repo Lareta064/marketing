@@ -29,3 +29,18 @@ $(function() {
 //parallax
 var scene = document.getElementById('scene');
 var parallax = new Parallax(scene);
+ //map google
+
+function initMap() {    
+	var center = {lat: 59.124700, lng: 37.928706};
+	var map = new google.maps.Map(document.getElementById('map'), {
+	zoom: 17,
+	center: center
+	});
+
+	var marker = new google.maps.Marker({
+	position: center,
+	map: map,
+	title: "ул. Ленина, 50"
+	});
+	}

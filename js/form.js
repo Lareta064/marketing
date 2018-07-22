@@ -42,8 +42,4 @@ $(document).ready(function() {
      $(".overlay_popup").hide();
       $("#popup1").hide();
    });
-      
-
-})
-
-    
+});
