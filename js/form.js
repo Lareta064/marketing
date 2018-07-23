@@ -6,35 +6,6 @@ $(document).ready(function() {
        return this.optional(element) || /\+\d{1}\(\d{3}\)\d{3}-\d{4}/g.test(value); 
   }, "Введенный номер не корректен");*/
 
-// jQuery Validate JS
-  $(".contact-form").validate({
-    rules: {
-      name: { required: true },
-      email: { required: true, email: true },
-      // skype:  { required: true },
-      /*phone:{
-        required: true,
-        'checkMask': true
-      },*/
-      
-      message: { required: true }
-    },
-
-    messages: {
-      phone: {
-        required: "Пожалуйста, введите номер телефона",
-      }
-     // name: "Пожалуйста, введите свое имя",
-      //email: {
-       // required: "Пожалуйста, введите свой email",
-       //email: "Email адрес должен быть в формате name@domain.com . Возможно вы ввели email с ошибкой."
-    },
-
-    submitHandler: function(form) {
-      ajaxFormSubmit();
-    }
-
-  })
 
   
    // закрываем окно, нажимая на крестик

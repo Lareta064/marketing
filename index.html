@@ -3,28 +3,31 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Главная</title>
+    <meta name="keywords" content="веб студия, интернет маркетинг, диджитал агентство, разработка сайтов, продвижение, реклама">
+    <meta name="description" content="Эффективный маркетинг в Интернете: сайты под ключ, свежие идеи SMM, разработка дизайна и настройка контекстной рекламы.">
+    <title>Веб-студия Marketing Place: продвижение компании в Интернете</title>
     <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="libs/animate.css">
     <link rel="stylesheet" href="font/BauhausC/stylesheet.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Arimo:400,700&amp;amp;subset=cyrillic-ext" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
   </head>
   <body>
     <header class="header" id="scene">
       <div class="layer layer__item1" data-depth="0.40"><img src="img/parallax/1.png" alt=""></div>
-      <div class="layer layer__item2" data-depth="0.80"><img src="img/parallax/2.png" alt=""></div>
+      <div class="layer layer__item2" data-depth="0.60"><img src="img/parallax/2.png" alt=""></div>
       <div class="layer layer__item3" data-depth="1"><img src="img/parallax/3.png" alt=""></div>
       <div class="layer layer__item4" data-depth="0.40"><img src="img/parallax/4.png" alt=""></div>
-      <div class="layer layer__item5" data-depth="0.80"><img src="img/parallax/5.png" alt=""></div>
-      <div class="layer layer__item6" data-depth="1"><img src="img/parallax/6.png" alt=""></div>
+      <div class="layer layer__item5" data-depth="0.50"><img src="img/parallax/5.png" alt=""></div>
+      <div class="layer layer__item6" data-depth="0.9"><img src="img/parallax/6.png" alt=""></div>
       <div class="menu">
         <div class="menu-icon"> 
           <div class="dash"> <span>&mdash; </span><span>&mdash; </span><span>&mdash;</span></div>
         </div>
-        <p class="menu-paragraf">menu</p>
-        <nav class="disp-n disp-b" id="nav-menu"><a class="nav-menu__item menu-paragraf" href="#">СОЗДАНИЕ САЙТОВ</a><a class="nav-menu__item menu-paragraf" href="#">ДИЗАЙН</a><a class="nav-menu__item menu-paragraf" href="#">SEO</a><a class="nav-menu__item menu-paragraf" href="#">E-MAIL МАРКЕТИНГ</a><a class="nav-menu__item menu-paragraf" href="#">КОНТЕКСТНАЯ РЕКЛАМА</a><a class="nav-menu__item menu-paragraf" href="#">SMM</a><a class="nav-menu__item menu-paragraf" href="#">О НАС</a><a class="nav-menu__item menu-paragraf" href="#">КОНТАКТЫ</a><a class="nav-menu__item menu-paragraf" href="#">БЛОГ</a></nav>
+        <p class="menu-paragraf">меню</p>
+        <nav class="disp-n disp-b" id="nav-menu"><a class="nav-menu__item menu-paragraf" href="#">СОЗДАНИЕ САЙТОВ</a><a class="nav-menu__item menu-paragraf" href="design.html">ДИЗАЙН</a><a class="nav-menu__item menu-paragraf" href="#">SEO</a><a class="nav-menu__item menu-paragraf" href="#">E-MAIL МАРКЕТИНГ</a><a class="nav-menu__item menu-paragraf" href="#">КОНТЕКСТНАЯ РЕКЛАМА</a><a class="nav-menu__item menu-paragraf" href="#">SMM</a><a class="nav-menu__item menu-paragraf" href="#">О НАС</a><a class="nav-menu__item menu-paragraf" href="#">КОНТАКТЫ</a><a class="nav-menu__item menu-paragraf" href="#">БЛОГ</a></nav>
       </div>
       <div class="header__top-content">
         <div class="logo"><img class="img-fluid" src="img/icons/logo.png" alt="logo"></div>
@@ -36,24 +39,26 @@
       <div class="header-center">
         <h1 class="header-title ta-right">Marketing<span class="align-right">place</span><span class="text-vertical">веб-студия</span></h1>
       </div>
+      <div class="scroll"><a href="#offer"><img src="img/icons/scrol.png" alt="scrol"></a></div>
     </header>
-    <section class="offer">
+    <section class="offer" id="offer">
       <div class="offer-block">
+        <div class="offer-img-mobil d-lg-none"><img class="img-fluid" src="img/bg/rating.jpg" alt=""></div>
         <div class="container-fluid">
           <div class="row no-gutters">
             <div class="col-lg-7 offer-img"></div>
             <div class="col-lg-5">
               <div class="offer-content">
-                <p>готовы обсудить<br>возможности вашего<br>бизнеса уже сейчас?</p>
+                <p class="wow slideInUp" data-wow-duration="2s">готовы обсудить<br>возможности вашего<br>бизнеса уже сейчас?</p>
                 <form class="contact-form" id="form_1" action="php/mail.php" method="POST">
                   <input type="hidden" name="project_name" value="Marketing">
                   <input type="hidden" name="admin_email" value="lareta1@yandex.ru">
-                  <input type="hidden" name="form_subject" value="Сообщение с сайта">
-                  <input type="text" name="name" id="offer-form__name" placeholder="Name">
-                  <input type="text" name="email" id="offer-form__email" placeholder="Email">
+                  <input type="hidden" name="form_subject" value="Заявка с главной страницы">
+                  <input type="text" name="name" id="form_1_name" placeholder="Ваше имя" required>
+                  <input type="text" name="email" id="form_1_email" placeholder="Ваш email" required>
                   <button class="btn offer-btn" type="submit">оставить заявку</button>
                 </form>
-                <p class="mb-0 pb-3">или продолжите<br>смотреть дальше?</p>
+                <p class="mb-0 pb-3 wow slideInUp" data-wow-duration="2s">или продолжите<br>смотреть дальше?</p>
               </div>
             </div>
           </div>
@@ -69,7 +74,7 @@
           <div class="col-lg-5 p-0">
             <div class="section1__content">
               <div class="section1__content-number"><img class="img-fluid" src="../img/icons/1.png" alt=""></div>
-              <div class="section1__content-text">
+              <div class="section1__content-text wow slideInUp" data-wow-duration="2s">
                 <p class="paragraf color-green">МЫ не только<br>создаем сайты</p>
                 <p class="paragraf color-white">Мы предоставляем<br>комплексный<br>интернет-маркетинг:<br>от макета визитки,<br>до создания и<br>продвижения<br>сайтов</p>
               </div>
@@ -84,14 +89,14 @@
           <div class="col-lg-5 p-0">
             <div class="section2__content">
               <div class="section2__content-number"><img class="img-fluid" src="../img/icons/2.png" alt=""></div>
-              <div class="section2__content-text">
+              <div class="section2__content-text wow slideInUp" data-wow-duration="2s">
                 <p class="paragraf color-green">МЫ ЗНАЕМ,<br>ЧТО будет завтра</p>
                 <p class="paragraf color-white">Мы следим за всеми<br>трендами, фишками<br>интернет-маркетинга</p>
               </div>
             </div>
           </div>
           <div class="col-lg-7 p-0">
-            <div class="section3-img"></div>
+            <div class="section2-img"></div>
           </div>
         </div>
       </div>
@@ -105,7 +110,7 @@
           <div class="col-lg-5 p-0">
             <div class="section1__content">
               <div class="section3__content-number"><img class="img-fluid" src="../img/icons/3.png" alt=""></div>
-              <div class="section1__content-text">
+              <div class="section1__content-text wow slideInUp" data-wow-duration="2s">
                 <p class="paragraf color-green">МЫ делаем КАЧЕCТВО<br>ДОСТУПНым</p>
                 <p class="paragraf color-white">Мы постоянно <br>совершенствуем<br>свои знания,<br>обучаемся, имеем <br>опыт работы с<br>крупными проектами</p>
               </div>
@@ -120,7 +125,7 @@
           <div class="col-lg-5 p-0">
             <div class="section2__content">
               <div class="section4__content-number"><img class="img-fluid" src="../img/icons/4.png" alt=""></div>
-              <div class="section2__content-text">
+              <div class="section2__content-text wow slideInUp" data-wow-duration="2s">
                 <p class="paragraf color-green">МЫ проводим <br>индвидуальную<br>работу с клиентоми</p>
                 <p class="paragraf color-white">Мы изучаем ваш<br>бизнес детально и<br>предлагаем<br>оптимальные<br>варианты для его<br>развития</p>
               </div>
@@ -138,7 +143,7 @@
           <div class="row">
             <div class="col-sm-6">
               <div class="benefits text-right">
-                <div class="benefits-left text-left">
+                <div class="benefits-left text-left wow slideInUp" data-wow-duration="2s">
                   <p class="paragraf color-green">МЫ не только<br>создаем сайты</p>
                   <p class="paragraf color-white">Мы предоставляем<br>комплексный<br>интернет-маркетинг:<br>от макета визитки,<br>до создания и<br>продвижения<br>сайтов</p>
                 </div>
@@ -147,7 +152,7 @@
             </div>
             <div class="col-sm-6">
               <div class="benefits">
-                <div class="benefits-right text-right">
+                <div class="benefits-right text-right wow slideInUp" data-wow-duration="2s">
                   <p class="paragraf color-green">МЫ ЗНАЕМ,<br>ЧТО будет завтра</p>
                   <p class="paragraf color-white">Мы следим за всеми<br>трендами, фишками<br>интернет-маркетинга</p>
                 </div>
@@ -156,7 +161,7 @@
             </div>
             <div class="col-sm-6">
               <div class="benefits text-right">
-                <div class="benefits-left text-left">
+                <div class="benefits-left text-left wow slideInUp" data-wow-duration="2s">
                   <p class="paragraf color-green">МЫ делаем КАЧЕCТВО<br>ДОСТУПНым</p>
                   <p class="paragraf color-white">Мы постоянно <br>совершенствуем<br>свои знания,<br>обучаемся, имеем <br>опыт работы с<br>крупными проектами</p>
                 </div>
@@ -165,7 +170,7 @@
             </div>
             <div class="col-sm-6">
               <div class="benefits">
-                <div class="benefits-right text-right">
+                <div class="benefits-right text-right wow slideInUp" data-wow-duration="2s">
                   <p class="paragraf color-green">МЫ проводим <br>индвидуальную<br>работу с клиентоми</p>
                   <p class="paragraf color-white">Мы изучаем ваш<br>бизнес детально и<br>предлагаем<br>оптимальные<br>варианты для его<br>развития</p>
                 </div>
@@ -178,49 +183,49 @@
     </section>
     <section class="service service-design">
       <div class="service-text design">
-        <h2 class="service-text__title">Дизайн</h2>
+        <h2 class="service-text__title wow pulse" data-wow-duration="1s">Дизайн</h2>
         <h3 class="service-text__description"> мы УМЕЕМ делать красиво</h3>
       </div>
       <div class="section-btn"><a class="basic-btn" href="#">УЗНАТЬ БОЛЬШЕ</a></div>
     </section>
     <section class="service service-site">
       <div class="service-text site">
-        <h2 class="service-text__title">создание сайтов</h2>
+        <h2 class="service-text__title wow pulse" data-wow-duration="1s">создание сайтов</h2>
         <h3 class="service-text__description"> адаптивно, лакончино и просто</h3>
       </div>
       <div class="section-btn"><a class="basic-btn" href="#">УЗНАТЬ БОЛЬШЕ</a></div>
     </section>
     <section class="service service-market">
       <div class="service-text marketing">
-        <h2 class="service-text__title">social media marketing</h2>
+        <h2 class="service-text__title wow pulse" data-wow-duration="1s">social media marketing</h2>
         <h3 class="service-text__description"> о вас узнают все и везде</h3>
       </div>
       <div class="section-btn"><a class="basic-btn" href="#">УЗНАТЬ БОЛЬШЕ</a></div>
     </section>
     <section class="service service-opt">
       <div class="service-text seo">
-        <h2 class="service-text__title">sEO ОПТИМИЗАЦИЯ</h2>
+        <h2 class="service-text__title wow pulse" data-wow-duration="1s">sEO ОПТИМИЗАЦИЯ</h2>
         <h3 class="service-text__description"> БЫТЬ ПЕРВЫМ В ПОИСКЕ</h3>
       </div>
       <div class="section-btn"><a class="basic-btn" href="#">УЗНАТЬ БОЛЬШЕ</a></div>
     </section>
     <section class="service service-reklama">
       <div class="service-text advert">
-        <h2 class="service-text__title">КОНТЕКСТНАЯ РЕКЛАМА </h2>
+        <h2 class="service-text__title wow pulse" data-wow-duration="1s">КОНТЕКСТНАЯ РЕКЛАМА </h2>
         <h3 class="service-text__description"> Только целевой трафик<br> по минимальной цене</h3>
       </div>
       <div class="section-btn"><a class="basic-btn" href="#">УЗНАТЬ БОЛЬШЕ</a></div>
     </section>
     <section class="service service-email">
       <div class="service-text email">
-        <h2 class="service-text__title">E-MAIL МАРКЕТИНГ</h2>
+        <h2 class="service-text__title wow pulse" data-wow-duration="1s">E-MAIL МАРКЕТИНГ</h2>
         <h3 class="service-text__description"> СТИМУЛИРОВАНИЕ КЛИЕНТОВ </h3>
       </div>
       <div class="section-btn"><a class="basic-btn" href="#">УЗНАТЬ БОЛЬШЕ</a></div>
     </section>
     <section class="our_clients">
       <div class="container">
-        <h2 class="section-head">наши клиенты</h2>
+        <h2 class="section-head wow slideInUp" data-wow-duration="1s">наши клиенты</h2>
         <div class="our_clients-block-mobil d-sm-none">
           <div class="carousel slide d-inline-block" id="carousel" data-ride="carousel">
             <!-- Индикаторы-->
@@ -266,25 +271,25 @@
         </div>
       </div>
     </section>
-    <section class="cta text-center">
-      <h2 class="section-head">ОСТАЛИСЬ ВОПРОСЫ?<br>ЗАДАЙТЕ ИХ НАШЕМУ СПЕЦИАЛИСТУ</h2>
+    <section class="cta text-center" id="cta">
+      <h2 class="section-head wow slideInUp" data-wow-duration="1s">ОСТАЛИСЬ ВОПРОСЫ?<br>ЗАДАЙТЕ ИХ НАШЕМУ СПЕЦИАЛИСТУ</h2>
       <div class="container">
-        <div class="contact-form cta-form" id="form_2" action="php/mail-cta.php" method="POST">
+        <form class="contact-form cta-form" id="form_2" action="php/mail_form_2.php" method="POST">
           <input type="hidden" name="project_name" value="Marketing">
           <input type="hidden" name="admin_email" value="lareta1@yandex.ru">
-          <input type="hidden" name="form_subject" value="Сообщение с сайта">
+          <input type="hidden" name="form_subject" value="Заявка на консультанта">
           <div class="row">
             <div class="col-md-6">
-              <input type="text" name="name" id="offer-form__name" placeholder="Name">
+              <input type="text" name="name" placeholder="Ваше имя" required>
             </div>
             <div class="col-md-6">
-              <input type="text" name="email" id="offer-form__email" placeholder="Email">
+              <input type="text" name="email" placeholder="Ваш email" required>
             </div>
             <div class="col-md-6 offset-md-3">
               <button class="btn offer-btn" id="cta-btn" type="submit">заполнить форму</button>
             </div>
           </div>
-        </div>
+        </form>
       </div>
     </section>
     <section class="map-block">
@@ -329,45 +334,45 @@
           <!--column aboutus-->
           <div class="column column-about">
             <h4 class="column-title">компания					</h4>
-            <ul class="aboutus">
-              <li><a class="footer-link" href="#">О компании</a></li>
-              <li><a class="footer-link" href="#">Портфолио</a></li>
-              <li><a class="footer-link" href="#">Отзывы</a></li>
-              <li><a class="footer-link" href="#">Контакты</a></li>
+            <ul class="aboutus block-list">
+              <li class="block-list-item"><a class="footer-link" href="#">О компании</a></li>
+              <li class="block-list-item"><a class="footer-link" href="#">Портфолио</a></li>
+              <li class="block-list-item"><a class="footer-link" href="#">Отзывы</a></li>
+              <li class="block-list-item"><a class="footer-link" href="#">Контакты</a></li>
             </ul>
           </div>
           <!--column service-->
           <div class="column column-service">
             <h4 class="column-title">Услуги</h4>
-            <ul class="aboutus">
-              <li><a class="footer-link" href="#">Создание сайтов</a></li>
-              <li><a class="footer-link" href="#">Дизайн</a></li>
-              <li><a class="footer-link" href="#">SMM</a></li>
-              <li><a class="footer-link" href="#">SEO оптимизация</a></li>
-              <li><a class="footer-link" href="#">Yandex Direct</a></li>
-              <li><a class="footer-link" href="#">Google Adwords</a></li>
-              <li><a class="footer-link" href="#">E-mail маркетинг</a></li>
+            <ul class="aboutus block-list">
+              <li class="block-list-item"><a class="footer-link" href="#">Создание сайтов</a></li>
+              <li class="block-list-item"><a class="footer-link" href="#">Дизайн</a></li>
+              <li class="block-list-item"><a class="footer-link" href="#">SMM</a></li>
+              <li class="block-list-item"><a class="footer-link" href="#">SEO оптимизация</a></li>
+              <li class="block-list-item"><a class="footer-link" href="#">Yandex Direct</a></li>
+              <li class="block-list-item"><a class="footer-link" href="#">Google Adwords</a></li>
+              <li class="block-list-item"><a class="footer-link" href="#">E-mail маркетинг</a></li>
             </ul>
           </div>
           <!--column contacts-->
           <div class="column column-contact">
             <h4 class="column-title">Контакты					</h4>
-            <ul class="aboutus pb-4">
-              <li>Адрес:&nbsp; г.&nbsp;Череповец,&nbsp;ул.&nbsp;Ленина,&nbsp;50</li>
-              <li>Тел:&nbsp;&nbsp;<a class="footer-link" href="tel:+79535127770">+7&nbsp;953&nbsp;512&nbsp;777&nbsp;0</a></li>
-              <li>Email:&nbsp;&nbsp;<a class="footer-link" href="mailto:Marketing-place@yandex.ru">Marketing-place@yandex.ru</a></li>
+            <ul class="aboutus block-list pb-4">
+              <li class="block-list-item">Адрес:&nbsp; г.&nbsp;Череповец,&nbsp;ул.&nbsp;Ленина,&nbsp;50</li>
+              <li class="block-list-item">Тел:&nbsp;&nbsp;<a class="footer-link" href="tel:+79535127770">+7&nbsp;953&nbsp;512&nbsp;777&nbsp;0</a></li>
+              <li class="block-list-item">Email:&nbsp;&nbsp;<a class="footer-link" href="mailto:Marketing-place@yandex.ru">Marketing-place@yandex.ru</a></li>
             </ul>
             <h4 class="column-title">наш прайс PDF</h4><a class="btn-link" href="#">Посмотреть</a>
           </div>
           <!--column form-->
           <div class="column column-form">
             <h4 class="column-title">ПОДПИСАТЬСЯ НА НАШУ РАССЫЛКУ</h4>
-            <form class="contact-form" id="form_3" action="php/mail-form3.php" method="POST">
+            <form class="contact-form" id="form_3" action="php/mail_form_3.php" method="POST">
               <input type="hidden" name="project_name" value="Marketing">
               <input type="hidden" name="admin_email" value="lareta1@yandex.ru">
               <input type="hidden" name="form_subject" value="Заявка на подписку">
-              <input type="text" name="name" placeholder="Ваше имя">
-              <input type="text" name="email" placeholder="Ваш email">
+              <input type="text" name="name" placeholder="Ваше имя" required>
+              <input type="text" name="email" placeholder="Ваш email" required>
               <button class="btn subscription-btn" type="submit">Подписаться</button>
             </form>
           </div>
@@ -377,8 +382,6 @@
     <script src="libs/jquery/jquery-3.0.0.min.js"></script>
     <script src="libs/bootstrap/js/bootstrap.min.js"></script>
     <script src="libs/pagescroll2id/jquery.malihu.PageScroll2id.js"></script>
-    <script src="libs/jquery.validate/jquery.validate.js"></script>
-    <script src="libs/jquery.maskedinput.js"></script>
     <script src="libs/parallax.min.js"></script>
     <script src="libs/wow.min.js"></script>
     <script src="js/vertical-menu.js"></script>

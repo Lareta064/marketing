@@ -11,12 +11,17 @@ $(function() {
     });
 	// end плавная прокрутка
 
+	// смена фона в блоке с формой
+	$('#form_2').click( function(event){
+		$('#cta').css('background-image','url(img/bg/cta2.jpg)');
+	});
+
     //animated
 	 wow = new WOW( {
 	     boxClass:     'wow',      // default
 	    animateClass: 'animated', // default
-	    mobile:       false,       // default
-	    offset:       100,          // через сколько пикселей сработает
+	    mobile:       true,       // default
+	    offset:       150,          // через сколько пикселей сработает
 	    live:         true        // для мобильных оставить или убрать анимацию
 	    }
 	  )
