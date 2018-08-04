@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="веб студия, интернет маркетинг, диджитал агентство, разработка сайтов, продвижение, реклама">
+    <meta name="description" content="Эффективный маркетинг в Интернете: сайты под ключ, свежие идеи SMM, разработка дизайна и настройка контекстной рекламы.">
+    <title>Создание сайта, дизайн и вёрстка под ключ в агентстве веб-разработки</title>
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="libs/animate.css">
+    <link rel="stylesheet" href="font/BauhausC/stylesheet.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Arimo:400,700&amp;amp;subset=cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+  </head>
+  <body style="opacity:0;transition:2.5s;">
+    <header class="header seo-header" id="scene">
+      <div class="layer layer__item1" data-depth="0.40"><img src="img/parallax/1.png" alt=""></div>
+      <div class="layer layer__item2" data-depth="0.60"><img src="img/parallax/2.png" alt=""></div>
+      <div class="layer layer__item3" data-depth="1"><img src="img/parallax/3.png" alt=""></div>
+      <div class="layer layer__item4" data-depth="0.40"><img src="img/parallax/4.png" alt=""></div>
+      <div class="layer layer__item5" data-depth="0.50"><img src="img/parallax/5.png" alt=""></div>
+      <div class="layer layer__item6" data-depth="0.9"><img src="img/parallax/6.png" alt=""></div>
+      <div class="menu">
+        <div class="menu-icon"> 
+          <div class="dash"> <span>&mdash; </span><span>&mdash; </span><span>&mdash;</span></div>
+        </div>
+        <p class="menu-paragraf">меню</p>
+        <nav class="disp-n disp-b" id="nav-menu"><a class="nav-menu__item menu-paragraf" href="creation_sites.html">СОЗДАНИЕ САЙТОВ</a><a class="nav-menu__item menu-paragraf" href="design.html">ДИЗАЙН</a><a class="nav-menu__item menu-paragraf" href="#">SEO</a><a class="nav-menu__item menu-paragraf" href="#">E-MAIL МАРКЕТИНГ</a><a class="nav-menu__item menu-paragraf" href="context_adv.html">КОНТЕКСТНАЯ РЕКЛАМА</a><a class="nav-menu__item menu-paragraf" href="smm-service.html">SMM</a><a class="nav-menu__item menu-paragraf" href="#">О НАС</a><a class="nav-menu__item menu-paragraf" href="#footer">КОНТАКТЫ</a><a class="nav-menu__item menu-paragraf" href="#">БЛОГ</a></nav>
+      </div>
+      <div class="header__top-content">
+        <div class="logo"><a href="index.html"><img class="img-fluid" src="img/icons/logo.png" alt="logo"></a></div>
+        <div class="header-contacts">
+          <div class="header-mail"><a class="contact-mail" href="#">Marketing-place@yandex.ru</a></div>
+          <div class="header-phone"><a class="contact-phone" href="#">8 953 512 777 0</a><a class="contact-phone" href="#">8 996 512 58 51</a></div>
+        </div>
+      </div>
+      <div class="seo-header-center">
+        <h1 class="header-title ta-right">Продвижение<br>в&nbsp;социальных<br>сетях</h1><span class="seo-slogan">о вас узнают все и везде</span><a class="open_modal open_modal--seo" id="open_modal" href="#">получить<span class="mob-span">&nbsp;бесплатную</span><br>консультацию</a>
+      </div>
+      <div class="scroll scroll-seo"><a href="#creation-benefits" rel="m_PageScroll2id"><img src="img/icons/scrol.png" alt="scrol"></a></div>
+      <div id="overlay"></div>
+      <div class="design-service__block-form" id="modalForm">
+        <p class="block-form__title">Заполните форму</p>
+        <p class="block-form__sub-title">наш менеджер свяжется с вами<br>и обсудит детали</p>
+        <form class="block-form__body" action="php/mail.php" method="POST">
+          <input type="hidden" name="project_name" value="Marketing">
+          <input type="hidden" name="admin_email" value="lareta1@yandex.ru">
+          <input type="hidden" name="form_subject" value="Заявка с главной страницы">
+          <input type="text" name="name" placeholder="Ваше имя">
+          <input type="text" name="email" placeholder="Ваш телефон или email">
+          <label class="mark-label">
+            <input type="checkbox" id="mark_modal" required checked> Даю согласие на обработку данных
+          </label>
+          <button class="btn subscription-btn" id="modalBtn" type="submit">оставить заявку</button>
+        </form>
+      </div>
+    </header>
+    <section class="seo-benefits" id="seo-benefits">
+      <div class="container">
+        <div class="benefits-slogan wow slideInUp" data-wow-duration="2s">
+          <p class="benefits-slogan-text">SMm - развитие вашего бизнеса с использованием <br>популярных  социальных сетей.</p>
+        </div>
+        <div class="seo-benefits__block">
+          <div class="seo-benefits__block-item wow slideInUp" data-wow-duration="2s">
+            <div class="seo-benefits-item-img"><img class="img-fluid" src="img/page_ceo/komanda.png" alt="иконка"></div>
+            <div class="seo-benefits-item-text">
+              <p>над вашим проектом будет работать команда профессионалов</p>
+            </div>
+          </div>
+          <div class="seo-benefits__block-item wow slideInUp" data-wow-duration="2s">
+            <div class="seo-benefits-item-img"><img class="img-fluid" src="img/page_ceo/auto.png" alt="иконка"></div>
+            <div class="creation-benefits-item-text">
+              <p>эФФЕКТИВНО СОЧЕТАЕМ АВТОМАТИЗАЦИЮ С РУЧНОЙ РАБОТОЙ</p>
+            </div>
+          </div>
+          <div class="seo-benefits__block-item wow slideInUp" data-wow-duration="2s">
+            <div class="seo-benefits-item-img"><img class="img-fluid" src="img/page_ceo/zatrati.png" alt="иконка"></div>
+            <div class="seo-benefits-item-text">
+              <p>В ходе SMM кампании СНИЖАЕМ ЗАТРАТЫ НА РЕКЛАМУ</p>
+            </div>
+          </div>
+          <div class="seo-benefits__block-item wow slideInUp" data-wow-duration="2s">
+            <div class="seo-benefits-item-img"><img class="img-fluid" src="img/page_ceo/informirovannost.png" alt="иконка"></div>
+            <div class="seo-benefits-item-text">
+              <p>информируем о нашей работе. предоставляем отчеты по результатам и аналитике</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="seo-service seo-offer-block"><img class="img-fluid timeLine-fon14" src="img/page_ceo/5.png" alt=""><img class="img-fluid timeLine-fon3" src="img/page_ceo/6.png" alt=""><img class="img-fluid timeLine-fon2" src="img/page_ceo/1.png" alt=""><img class="img-fluid timeLine-fon15" src="img/fon-items/20.png" alt="">
+      <h2 class="section-head text-center wow slideInUp" data-wow-duration="2s">наши услуги</h2>
+      <div class="container">
+        <div class="seo-service__cards">
+          <div class="seo-service__cards-item wow slideInUp" data-wow-duration="2s">
+            <div class="seo-service__card-title">
+              <h4>старт</h4>
+            </div>
+            <div class="seo-service__card-list">
+              <ul class="aboutus block-list">
+                <li class="block-list-item seo-service-list-item">Аудит социальной сети</li>
+                <li class="block-list-item seo-service-list-item">Ведение и модерация сообщества</li>
+                <li class="block-list-item seo-service-list-item">Создание стратегии продвижения</li>
+                <li class="block-list-item seo-service-list-item">Создание контент-плана</li>
+                <li class="block-list-item seo-service-list-item">Создание уникального текстового &nbsp;&nbsp;контента (30 публикаций)</li>
+                <li class="block-list-item seo-service-list-item">Ведение и модерация сообщества</li>
+                <li class="block-list-item seo-service-list-item">Оформление и дизайн социальных &nbsp;&nbsp;сетей</li>
+                <li class="block-list-item seo-service-list-item">Формирование отчетности и аналитики</li>
+              </ul>
+            </div>
+            <div class="seo-service__card-price">
+              <p>Цена:&nbsp;от&nbsp;5&nbsp;000&nbsp;руб</p>
+            </div>
+          </div>
+          <div class="seo-service__cards-item wow slideInUp" data-wow-duration="2s">
+            <div class="seo-service__card-title">
+              <h4>оптимальный</h4>
+            </div>
+            <div class="seo-service__card-list">
+              <ul class="aboutus block-list">
+                <li class="block-list-item seo-service-list-item">Аудит социальной сети</li>
+                <li class="block-list-item seo-service-list-item">Ведение и модерация сообщества</li>
+                <li class="block-list-item seo-service-list-item">Создание стратегии продвижения</li>
+                <li class="block-list-item seo-service-list-item">Создание контент-плана</li>
+                <li class="block-list-item seo-service-list-item">Создание уникального текстового &nbsp;&nbsp;контента (30 публикаций)</li>
+                <li class="block-list-item seo-service-list-item">Ведение и модерация сообщества</li>
+                <li class="block-list-item seo-service-list-item">Оформление и дизайн социальных &nbsp;&nbsp;сетей</li>
+                <li class="block-list-item seo-service-list-item">Формирование отчетности и аналитики</li>
+                <li class="block-list-item seo-service-list-item">Настройка сервисов по автоматизации &nbsp;&nbsp;деятельности в Instagram</li>
+                <li class="block-list-item seo-service-list-item">Создание таргетированной рекламной &nbsp;&nbsp;кампании</li>
+              </ul>
+            </div>
+            <div class="seo-service__card-price">
+              <p>Цена:&nbsp;от&nbsp;10&nbsp;000&nbsp;руб</p>
+            </div>
+          </div>
+          <div class="seo-service__cards-item seo-service__cards-item3 wow slideInUp" data-wow-duration="2s">
+            <div class="seo-service__card-title">
+              <h4>продвинутый</h4>
+            </div>
+            <div class="seo-service__card-list">
+              <ul class="aboutus block-list">
+                <li class="block-list-item seo-service-list-item">Аудит социальной сети</li>
+                <li class="block-list-item seo-service-list-item">Ведение и модерация сообщества</li>
+                <li class="block-list-item seo-service-list-item">Создание стратегии продвижения</li>
+                <li class="block-list-item seo-service-list-item">Создание контент-плана</li>
+                <li class="block-list-item seo-service-list-item">Создание уникального текстового &nbsp;&nbsp;контента (30 публикаций)</li>
+                <li class="block-list-item seo-service-list-item">Ведение и модерация сообщества</li>
+                <li class="block-list-item seo-service-list-item">Оформление и дизайн социальных &nbsp;&nbsp;сетей</li>
+                <li class="block-list-item seo-service-list-item">Формирование отчетности и аналитики</li>
+                <li class="block-list-item seo-service-list-item">Настройка сервисов по автоматизации &nbsp;&nbsp;деятельности в Instagram</li>
+                <li class="block-list-item seo-service-list-item">Создание таргетированной рекламной &nbsp;&nbsp;кампании</li>
+                <li class="block-list-item seo-service-list-item">Создание и внедрение промоакций</li>
+                <li class="block-list-item seo-service-list-item">Рекламные посевы в крупных &nbsp;&nbsp;тематических сообществах, группах, &nbsp;&nbsp;пабликах</li>
+                <li class="block-list-item seo-service-list-item">Анализ конкурентов</li>
+              </ul>
+            </div>
+            <div class="seo-service__card-price">
+              <p>Цена:&nbsp;от&nbsp;15&nbsp;000&nbsp;руб</p>
+            </div>
+          </div>
+          <div class="col-lg-8 offset-lg-2 d-none d-md-block">
+            <div class="seo-service__slogan wow slideInUp" data-wow-duration="2s">
+              <p>Мы можем подобрать индивидуальный план, с учетом пожеланий и специфики проекта </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center">
+        <div class="container">
+          <p class="block-form__title">оформите заказ прямо сейчас</p>
+          <p class="block-form__sub-title">
+            наш менеджер свяжется с вами						и обсудит детали</p>
+          <div class="row">
+            <div class="col-md-6 offset-md-3 text-center">
+              <div class="offer-block-form seo-offer-block">
+                <form class="block-form__body" action="php/mail.php" method="POST">
+                  <input type="hidden" name="project_name" value="Marketing">
+                  <input type="hidden" name="admin_email" value="lareta1@yandex.ru">
+                  <input type="hidden" name="form_subject" value="Заявка с главной страницы">
+                  <input type="text" name="name" placeholder="Ваше имя">
+                  <input type="text" name="email" placeholder="Ваш телефон или email">
+                  <label class="mark-label">
+                    <input type="checkbox" id="mark_modal" required> Даю согласие на обработку данных
+                  </label>
+                  <button class="btn subscription-btn" id="modalBtn" type="submit">получить консультацию</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--include ../sections/blocks/seo_pages/seo-offer.pug-->
+    <section class="smm-whats">
+      <h2 class="section-head">почему именно smm</h2>
+      <div class="container">
+        <div class="smm-whats__block">
+          <div class="smm-whats__block-column">
+            <ul class="smm-benefits-list">
+              <li class="smm-benefits-list-item smm-benefits-list-1"> Широкий охват аудитории: среди многомиллионной аудитории таких социальных сетей, как «ВКонтакте», Facebook, Instagram и др., присутствует большое количество ваших потенциальных клиентов.</li>
+              <li class="smm-benefits-list-item smm-benefits-list-2"> Точный и четкий выбор аудитории для доставки вашего сообщения.</li>
+              <li class="smm-benefits-list-item smm-benefits-list-3"> Высокая вирусоемкость: за короткое время можно получить тысячи посетителей на свой сайт за счет вирусного эффекта распространения информации в соцсетях.</li>
+            </ul>
+          </div>
+          <div class="smm-whats__block-column">
+            <ul class="smm-benefits-list">
+              <li class="smm-benefits-list-item smm-benefits-list-4"> Повышение узнаваемости бренда и лояльности к нему – соцсети предоставляют прекрасную возможность заявить о своем бренде, общаться с пользователи на понятном им языке, при этом информация о ваших продуктах и услугах не воспринимается как реклама.</li>
+              <li class="smm-benefits-list-item smm-benefits-list-5"> Невысокая стоимость продвижения – по сравнению с другими методами продвижения, стоимость привлечения посетителя с помощью социальных медиа значительно ниже.</li>
+              <li class="smm-benefits-list-item smm-benefits-list-6"> Быстрая обратная связь от потребителей и возможность вести непосредственное общение с клиентами: SMM дает возможность получить быстрый отклик от аудитории, что позволяет оперативно реагировать на пожелания/замечания потенциальных клиентов.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="seo-clients text-center"><img class="img-fluid timeLine-fon14" src="img/page_ceo/5.png" alt=""><img class="img-fluid timeLine-fon3" src="img/page_ceo/2.png" alt="">
+      <div class="container">
+        <h2 class="section-head wow slideInUp" data-wow-duration="1s">наши клиенты</h2>
+        <div class="our_clients-block-mobil d-sm-none">
+          <div class="carousel slide d-inline-block" id="carousel" data-ride="carousel">
+            <!-- Индикаторы-->
+            <ol class="carousel-indicators">
+              <li class="active" data-target="#carousel" data-slide-to="0"></li>
+              <li data-target="#carousel" data-slide-to="1"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active"><img class="img-fluid" src="img/page_ceo/holsti.png" alt="наши клиенты"></div>
+              <div class="carousel-item"><img class="img-fluid" src="img/page_ceo/kinohall.png" alt="наши клиенты"></div>
+            </div>
+          </div>
+        </div>
+        <div class="our_clients-block d-none d-sm-block">
+          <div class="row">
+            <div class="col-sm-4 offset-sm-2">
+              <div class="client-item"><img class="img-fluid" src="img/page_ceo/holsti.png" alt="наши клиенты"></div>
+            </div>
+            <div class="col-sm-4">
+              <div class="client-item"><img class="img-fluid" src="img/page_ceo/kinohall.png" alt="наши клиенты"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="reviews" id="reviews"><img class="img-fluid timeLine-fon11" src="img/page_ceo/8.png" alt=""><img class="img-fluid timeLine-fon12" src="img/page_ceo/1.png" alt=""><img class="img-fluid timeLine-fon3" src="img/page_ceo/6.png" alt="">
+      <h2 class="section-head wow slideInUp" data-wow-duration="2s">Отзывы</h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 offset-sm-2">
+            <div class="carousel slide" id="carouselReviews" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li class="active" data-target="#carouselReviews" data-slide-to="0"></li>
+                <li data-target="#carouselReviews" data-slide-to="1"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="review-text">
+                    <p> Большое человеческое спасибо вам за ведение и наполнение сообщества в ВК. Кино Hall в моём городе стал более популярным, во многом благодаря правильному таргету, контенту и действительно полезной информации. Сотрудничаем несколько месяцев, подписчики только реальные, очень много заказов приходит прямо через личные сообщения.</p>
+                    <div class="reviews-client-logo"><img class="img-fluid rounded-circle" src="img/page_creation/icons/logo_2.png"></div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="review-text">
+                    <p> Обратилась в это агентство, т.к. не было времени самой заниматься продвижением. У меня багетная мастерская и всегда много работы, ребята из этой студии облегчили жизнь. Теперь полностью сосредоточились на работе, а ведением группы и профилем в Insta занимается специалист. Очень классно подошли к оформлению постов, у подписчиков наблюдаем активность, всё как надо))</p>
+                    <div class="reviews-client-logo"><img class="img-fluid rounded-circle" src="img/page_ceo/otziv_2.png"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="cta text-center" id="cta">
+      <h2 class="section-head wow slideInUp" data-wow-duration="1s">ОСТАЛИСЬ ВОПРОСЫ?<br>ЗАДАЙТЕ ИХ НАШЕМУ СПЕЦИАЛИСТУ</h2>
+      <div class="container">
+        <form class="contact-form cta-form" id="form_2" action="php/mail_form_2.php" method="POST">
+          <input type="hidden" name="project_name" value="Marketing">
+          <input type="hidden" name="admin_email" value="lareta1@yandex.ru">
+          <input type="hidden" name="form_subject" value="Заявка на консультанта">
+          <div class="row">
+            <div class="col-md-6">
+              <input type="text" name="name" placeholder="Ваше имя" required>
+            </div>
+            <div class="col-md-6">
+              <input type="text" name="email" placeholder="Ваш email" required>
+            </div>
+            <div class="col-md-6 offset-md-3">
+              <button class="btn offer-btn" id="cta-btn" type="submit">заполнить форму</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section class="creation-cards">
+      <h2 class="section-head wow slideInUp text-center" data-wow-duration="2s" style="color:#000;">что мы еще можем<br>сделать для вашего бизнеса</h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 offset-sm-2 col-md-4 offset-md-0">
+            <div class="wow slideInUp" id="card1" data-wow-duration="2s">
+              <div class="card__title">
+                <h5>ПРОДВИЖЕНИЕ<br> В СОЦИАЛЬНЫХ<br> СЕТЯХ</h5>
+              </div>
+              <div class="card__text">
+                <p>Продвижение в ВКонтакте, Instagram, Facebook<br> под ключ</p>
+              </div>
+              <div class="card__click"><a href="#"><img class="img-fluid" src="img/page_design/click.png" alt=""></a></div>
+            </div>
+          </div>
+          <div class="col-sm-8 offset-sm-2 col-md-4 offset-md-0">
+            <div class="wow slideInUp" id="card4" data-wow-duration="2s">
+              <div class="card__title">
+                <h5>Дизайн</h5>
+              </div>
+              <div class="card__text">
+                <p>дизайн любой сложности от поста в соц.сетях до фирменного стиля</p>
+              </div>
+              <div class="card__click"><a href="design.html"><img class="img-fluid" src="img/page_design/click.png" alt=""></a></div>
+            </div>
+          </div>
+          <div class="col-sm-8 offset-sm-2 col-md-4 offset-md-0">
+            <div class="wow slideInUp" id="card5" data-wow-duration="2s">
+              <div class="card__title">
+                <h5>контекстная реклама</h5>
+              </div>
+              <div class="card__text">
+                <p>Настройка рекламных кампании в Yandex и Google</p>
+              </div>
+              <div class="card__click"><a href="#"><img class="img-fluid" src="img/page_design/click.png" alt=""></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="wrapper__info wow slideInUp" data-wow-duration="2s">
+          <div class="container">
+            <h3 class="article__head">Как работает СММ</h3>
+            <p class="article__text">SMM специалист имеет в своём распоряжении эффективный способ привлечения аудитории — таргетированная реклама в сети. С умом настроенный таргетинг (+ ретаргетинг) позволяет показывать рекламные сообщения потенциально заинтересованным пользователям социального медиа пространства. Бесплатно это сделать невозможно, но стоимость оправдывает ожидания.</p>
+            <p class="article__text">Важнейшей частью СММ является создание контента (в т. ч. вирусного), вызывающего интерес. Организуются: модерация сообществ, привлечение новых подписчиков, регулярное написание постов, выстраивание диалога. Интересное содержание способствует большей вовлеченности, формированию лояльности, повышенной конверсии. Один цепляющий пост из паблика VK.com способен вызвать позитивную реакцию подписчика, привести на сайт, продать товар/услугу. СММ продвижение в социальных сетях требует знания психологии продаж, умения пользоваться инструментами, а главное — опыта.</p>
+            <p class="article__text">Ключевые этапы интернет-маркетинга в social media:</p>
+            <ul>
+              <li>аудит, ситуационный анализ;</li>
+              <li>разработка стратегии, выбор инструментария;</li>
+              <li>запуск кампании, создание рекламы, ведение сообществ, привлечение аудитории;</li>
+              <li>анализ эффективности, ведение отчетности.</li>
+            </ul>
+            <h3 class="article__head">Как действует команда</h3>
+            <p class="article__text">СММ агентство с правильным подходом предполагает наличие сплочённой команды: сотрудники прошли курс обучения, посещают мастер-классы, развиваются, берутся за проекты с чётким разделением обязанностей. Комплексная работа над продвижением продуктивнее, чем труды фрилансера, выполняющего полный перечень функций. В рабочий процесс вовлечены маркетолог, аналитик, копирайтер, дизайнер.</p>
+            <p class="article__text">Копирайтер пишет яркие продающие тексты; дизайнер оформляет шапки сообществ, делает аватары, подбирает графику для постов. Маркетолог (SMM менеджер), управляет рекламой в социальных сетях, разрабатывает план обновления контента, следит за его выполнением, тщательно продумывает каждый этап запускаемой кампании. Результат — экономия средств клиента. Не требуется привлекать штатного специалиста на постоянную з/п. Не придётся отдавать задачу фрилансеру, график которого занят большим количеством проектов. Остаётся только доверить СММ кампанию команде специалистов.</p>
+            <p class="article__text">Наша веб-студия предлагает заказать качественное и высокоэффективное продвижение в социальных сетях ВКонтакте, Инстаграм или Фейсбук по доступным ценам. На выбор — 3 пакета услуг SMM под любые задачи. Проведём предварительную консультацию, обсудим сроки, примемся за дело. Оставив заявку с контактными данными, ожидайте выгодного предложения!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="map-block">
+      <div class="contact-window">
+        <ul class="map-contact">
+          <li class="contact-adress">
+            <p class="map-contact__title">Адрес</p>
+            <p class="map-contact__text"> г.&nbsp;Череповец,&nbsp;ул.&nbsp;Ленина,&nbsp;50</p>
+          </li>
+          <li class="contact-phone">
+            <p class="map-contact__title">телефон</p>
+            <p class="map-contact__text">8&nbsp;953&nbsp;512&nbsp;777&nbsp;0 </p>
+          </li>
+          <li class="contact-email">
+            <p class="map-contact__title">E-MAIL</p>
+            <p class="map-contact__text"> Marketing-place@yandex.ru</p>
+          </li>
+        </ul>
+        <div class="social-icons"><a class="sprite sprite-vk" href="https://vk.com/wsmarketingplace"></a><a class="sprite sprite-facebook" href="#"></a><a class="sprite sprite-instagramm" href="#"></a></div>
+      </div>
+      <div id="map"></div>
+      <script>
+        function initMap() {    
+        var center = {lat: 59.124700, lng: 37.928706};
+        var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 17,
+        center: center
+        });
+        
+        var marker = new google.maps.Marker({
+        position: center,
+        map: map,
+        title: "ул. Ленина, 50"
+        });
+        }
+      </script>
+      <script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvX6LBP5vPcv5WeKT3DurPtnQ1XIA50Ws&amp;callback=initMap"></script>
+    </section>
+    <footer class="d-none d-lg-block" id="footer">
+      <div class="container">
+        <div class="footer-content">
+          <!--column aboutus-->
+          <div class="column column-about">
+            <h4 class="column-title">компания					</h4>
+            <ul class="aboutus block-list">
+              <li class="block-list-item"><a class="footer-link" href="#">О компании</a></li>
+              <li class="block-list-item"><a class="footer-link" href="#">Портфолио</a></li>
+              <li class="block-list-item"><a class="footer-link" href="creation_sites.html#reviews" rel="m_PageScroll2id">Отзывы</a></li>
+              <li class="block-list-item"><a class="footer-link" href="#footer">Контакты</a></li>
+            </ul>
+          </div>
+          <!--column service-->
+          <div class="column column-service">
+            <h4 class="column-title">Услуги</h4>
+            <ul class="aboutus block-list">
+              <li class="block-list-item"><a class="footer-link" href="design.html">Создание сайтов</a></li>
+              <li class="block-list-item"><a class="footer-link" href="design.html">Дизайн</a></li>
+              <li class="block-list-item"><a class="footer-link" href="smm-service.html">SMM</a></li>
+              <li class="block-list-item"><a class="footer-link" href="#">SEO оптимизация</a></li>
+              <li class="block-list-item"><a class="footer-link" href="#">Yandex Direct</a></li>
+              <li class="block-list-item"><a class="footer-link" href="#">Google Adwords</a></li>
+              <li class="block-list-item"><a class="footer-link" href="#">E-mail маркетинг</a></li>
+            </ul>
+          </div>
+          <!--column contacts-->
+          <div class="column column-contact">
+            <h4 class="column-title">Контакты					</h4>
+            <ul class="aboutus block-list pb-4">
+              <li class="block-list-item">Адрес:&nbsp; г.&nbsp;Череповец,&nbsp;ул.&nbsp;Ленина,&nbsp;50</li>
+              <li class="block-list-item">Тел:&nbsp;&nbsp;<a class="footer-link" href="tel:+79535127770">+7&nbsp;953&nbsp;512&nbsp;777&nbsp;0</a></li>
+              <li class="block-list-item">Email:&nbsp;&nbsp;<a class="footer-link" href="mailto:Marketing-place@yandex.ru">Marketing-place@yandex.ru</a></li>
+            </ul>
+            <h4 class="column-title">наш прайс PDF</h4><a class="btn-link" href="#">Посмотреть</a>
+          </div>
+          <!--column form-->
+          <div class="column column-form">
+            <h4 class="column-title">ПОДПИСАТЬСЯ НА НАШУ РАССЫЛКУ</h4>
+            <form class="contact-form" id="form_3" action="php/mail_form_3.php" method="POST">
+              <input type="hidden" name="project_name" value="Marketing">
+              <input type="hidden" name="admin_email" value="lareta1@yandex.ru">
+              <input type="hidden" name="form_subject" value="Заявка на подписку">
+              <input type="text" name="name" placeholder="Ваше имя" required>
+              <input type="text" name="email" placeholder="Ваш email" required>
+              <button class="btn subscription-btn" type="submit">Подписаться</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <section id="back-top"><a href="#top" rel="m_PageScroll2id"><span><i class="fas fa-angle-double-up"></i></span></a></section>
+    <script src="libs/jquery/jquery-3.0.0.min.js"></script>
+    <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+    <script src="libs/pagescroll2id/jquery.malihu.PageScroll2id.js"></script>
+    <script src="libs/parallax.min.js"></script>
+    <script src="libs/wow.min.js"></script>
+    <script src="js/vertical-menu.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      $(document).ready(function() {
+      $("body").css("opacity", "1");
+      });
+    </script>
+  </body>
+</html>

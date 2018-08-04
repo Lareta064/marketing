@@ -10,11 +10,12 @@
     <link rel="stylesheet" href="libs/animate.css">
     <link rel="stylesheet" href="font/BauhausC/stylesheet.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Arimo:400,700&amp;amp;subset=cyrillic-ext" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
   </head>
-  <body>
+  <body style="opacity:0;transition:2.5s;">
     <header class="header design-header" id="scene">
       <div class="layer layer__item1" data-depth="0.40"><img src="img/parallax/1.png" alt=""></div>
       <div class="layer layer__item2" data-depth="0.60"><img src="img/parallax/2.png" alt=""></div>
@@ -27,7 +28,7 @@
           <div class="dash"> <span>&mdash; </span><span>&mdash; </span><span>&mdash;</span></div>
         </div>
         <p class="menu-paragraf">меню</p>
-        <nav class="disp-n disp-b" id="nav-menu"><a class="nav-menu__item menu-paragraf" href="#">СОЗДАНИЕ САЙТОВ</a><a class="nav-menu__item menu-paragraf" href="design.html">ДИЗАЙН</a><a class="nav-menu__item menu-paragraf" href="#">SEO</a><a class="nav-menu__item menu-paragraf" href="#">E-MAIL МАРКЕТИНГ</a><a class="nav-menu__item menu-paragraf" href="#">КОНТЕКСТНАЯ РЕКЛАМА</a><a class="nav-menu__item menu-paragraf" href="#">SMM</a><a class="nav-menu__item menu-paragraf" href="#">О НАС</a><a class="nav-menu__item menu-paragraf" href="#">КОНТАКТЫ</a><a class="nav-menu__item menu-paragraf" href="#">БЛОГ</a></nav>
+        <nav class="disp-n disp-b" id="nav-menu"><a class="nav-menu__item menu-paragraf" href="creation_sites.html">СОЗДАНИЕ САЙТОВ</a><a class="nav-menu__item menu-paragraf" href="design.html">ДИЗАЙН</a><a class="nav-menu__item menu-paragraf" href="seoservice.html">SEO</a><a class="nav-menu__item menu-paragraf" href="#">E-MAIL МАРКЕТИНГ</a><a class="nav-menu__item menu-paragraf" href="context_adv.html">КОНТЕКСТНАЯ РЕКЛАМА</a><a class="nav-menu__item menu-paragraf" href="smm-service.html">SMM</a><a class="nav-menu__item menu-paragraf" href="#">О НАС</a><a class="nav-menu__item menu-paragraf" href="#footer">КОНТАКТЫ</a><a class="nav-menu__item menu-paragraf" href="#">БЛОГ</a></nav>
       </div>
       <div class="header__top-content">
         <div class="logo"><a href="index.html"><img class="img-fluid" src="img/icons/logo.png" alt="logo"></a></div>
@@ -37,51 +38,67 @@
         </div>
       </div>
       <div class="design-header-center">
-        <h1 class="header-title ta-right">Дизайн</h1><a class="open_modal" href="#">получить<span class="mob-span">&nbsp;бесплатную</span><br>консультацию</a>
+        <h1 class="header-title ta-right">Дизайн</h1><a class="open_modal" id="open_modal" href="#">получить<span class="mob-span">&nbsp;бесплатную</span><br>консультацию</a>
       </div>
-      <div class="scroll"><a href="#offer"><img src="img/icons/scrol.png" alt="scrol"></a></div>
+      <div class="scroll"><a href="#design-benefits" rel="m_PageScroll2id"><img src="img/icons/scrol.png" alt="scrol"></a></div>
+      <div id="overlay"></div>
+      <div class="design-service__block-form" id="modalForm">
+        <p class="block-form__title">Заполните форму</p>
+        <p class="block-form__sub-title">наш менеджер свяжется с вами<br>и обсудит детали</p>
+        <form class="block-form__body" action="php/mail.php" method="POST">
+          <input type="hidden" name="project_name" value="Marketing">
+          <input type="hidden" name="admin_email" value="lareta1@yandex.ru">
+          <input type="hidden" name="form_subject" value="Заявка с главной страницы">
+          <input type="text" name="name" placeholder="Ваше имя">
+          <input type="text" name="email" placeholder="Ваш телефон или email">
+          <label class="mark-label">
+            <input type="checkbox" id="mark_modal" required checked> Даю согласие на обработку данных
+          </label>
+          <button class="btn subscription-btn" id="modalBtn" type="submit">оставить заявку</button>
+        </form>
+      </div>
     </header>
-    <section class="design-benefits">
+    <section class="design-benefits" id="design-benefits">
       <div class="container">
-        <div class="benefits-slogan">
+        <div class="benefits-slogan wow slideInUp" data-wow-duration="2s">
           <p class="benefits-slogan-text d-block d-sm-none">Дизайн - эстетика, <br>которая граничит с удобством.</p>
           <p class="benefits-slogan-text d-none d-sm-block">Дизайн - эстетика, которая граничит<br>с удобством.</p>
         </div>
         <div class="design-benefits__block">
-          <div class="design-benefits__block-item">
-            <div class="design-benefits-item-img"><img class="img-fluid" src="img/page_design/icon1.png" alt=""></div>
+          <div class="design-benefits__block-item wow slideInUp" data-wow-duration="2s">
+            <div class="design-benefits-item-img"><img class="img-fluid" src="img/page_design/icon1.png" alt="иконка"></div>
             <div class="design-benefits-item-text">
               <p>над вашим проектом будет работать команда профессионалов</p>
             </div>
           </div>
-          <div class="design-benefits__block-item">
-            <div class="design-benefits-item-img"><img class="img-fluid" src="img/page_design/icon1.png" alt=""></div>
+          <div class="design-benefits__block-item wow slideInUp" data-wow-duration="2s">
+            <div class="design-benefits-item-img"><img class="img-fluid" src="img/page_design/icon2.png" alt="иконка"></div>
             <div class="design-benefits-item-text">
-              <p>над вашим проектом будет работать команда профессионалов</p>
+              <p>макеты будут готовы для использованияили печати</p>
             </div>
           </div>
-          <div class="design-benefits__block-item">
-            <div class="design-benefits-item-img"><img class="img-fluid" src="img/page_design/icon1.png" alt=""></div>
+          <div class="design-benefits__block-item wow slideInUp" data-wow-duration="2s">
+            <div class="design-benefits-item-img"><img class="img-fluid" src="img/page_design/icon3.png" alt="иконка"></div>
             <div class="design-benefits-item-text">
-              <p>над вашим проектом будет работать команда профессионалов</p>
+              <p>опыт работы более 5 лет</p>
             </div>
           </div>
-          <div class="design-benefits__block-item">
-            <div class="design-benefits-item-img"><img class="img-fluid" src="img/page_design/icon1.png" alt=""></div>
+          <div class="design-benefits__block-item wow slideInUp" data-wow-duration="2s">
+            <div class="design-benefits-item-img"><img class="img-fluid" src="img/page_design/icon4.png" alt="иконка"></div>
             <div class="design-benefits-item-text">
-              <p>над вашим проектом будет работать команда профессионалов</p>
+              <p>акцент на деталях,креативный подход и эффективные решения ваших задач</p>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="design-service">
-      <h2 class="section-head">our service</h2>
+    <section class="design-service design-service__block-1">
+      <h2 class="section-head wow slideInUp" data-wow-duration="2s">НАШИ УСЛУГИ</h2>
       <div class="container">
         <div class="design-service__block">
           <div class="row">
             <div class="col-sm-7">
-              <div class="design-service__decription">
+              <div class="design-service__decription wow slideInUp" data-wow-duration="2s">
                 <h3 class="block-list__title">логотип и фирменный стиль</h3>
                 <ul class="block-list">
                   <li class="block-list-item">Логотип&nbsp;/<span class="service-item-price">&nbsp;от&nbsp;5&nbsp;000&nbsp;руб</span></li>
@@ -95,87 +112,17 @@
               </div>
             </div>
             <div class="col-sm-5">
-              <div class="design-service__block-form">
+              <div class="design-service__block-form wow slideInUp" data-wow-duration="2s">
                 <p class="block-form__title">Заполните форму</p>
                 <p class="block-form__sub-title">наш менеджер свяжется с вами<br>и обсудит детали</p>
-                <form class="block-form__body" action="" method="POST">
+                <form class="block-form__body" action="php/mail.php" method="POST">
                   <input type="hidden" name="project_name" value="Marketing">
                   <input type="hidden" name="admin_email" value="lareta1@yandex.ru">
                   <input type="hidden" name="form_subject" value="Заявка с главной страницы">
                   <input type="text" name="name" placeholder="Ваше имя" required>
                   <input type="text" name="email" placeholder="Ваш телефон или email" required>
                   <label class="mark-label">
-                    <input type="checkbox" id="mark1"> Даю согласие на обраблтку данных
-                  </label>
-                  <button class="btn subscription-btn" type="submit">оставить заявку</button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="design-service__block">
-          <div class="row">
-            <div class="col-sm-7 order-sm-2">
-              <div class="design-service__decription special-padding">
-                <h3 class="block-list__title">логотип и фирменный стиль</h3>
-                <ul class="block-list">
-                  <li class="block-list-item">Логотип&nbsp;/<span class="service-item-price">&nbsp;от&nbsp;5&nbsp;000&nbsp;руб</span></li>
-                  <li class="block-list-item">Фирменный стиль&nbsp;/<span class="service-item-price">&nbsp;от&nbsp;10&nbsp;000&nbsp;руб</span></li>
-                  <li class="block-list-item">Ребрендинг&nbsp;/<span class="service-item-price">&nbsp;от&nbsp;15&nbsp;000&nbsp;руб</span></li>
-                  <li class="block-list-item">Маркетинг-кит&nbsp;/<span class="service-item-price">&nbsp;от&nbsp;5&nbsp;000&nbsp;руб</span></li>
-                  <li class="block-list-item">Брендбук &nbsp;/<span class="service-item-price">&nbsp;от&nbsp;10&nbsp;000&nbsp;руб</span></li>
-                  <li class="block-list-item">Презентация &nbsp;/<span class="service-item-price">&nbsp;от&nbsp;1&nbsp;000&nbsp;руб</span></li>
-                  <li class="block-list-item">PDF документ &nbsp;/<span class="service-item-price">&nbsp;от&nbsp;1&nbsp;000&nbsp;руб</span></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-sm-5 order-sm-1">
-              <div class="design-service__block-form">
-                <p class="block-form__title">Заполните форму</p>
-                <p class="block-form__sub-title">наш менеджер свяжется с вами<br>и обсудит детали</p>
-                <form class="block-form__body" action="" method="POST">
-                  <input type="hidden" name="project_name" value="Marketing">
-                  <input type="hidden" name="admin_email" value="lareta1@yandex.ru">
-                  <input type="hidden" name="form_subject" value="Заявка с главной страницы">
-                  <input type="text" name="name" placeholder="Ваше имя" required>
-                  <input type="text" name="email" placeholder="Ваш телефон или email" required>
-                  <label class="mark-label">
-                    <input type="checkbox" id="mark2"> Даю согласие на обраблтку данных
-                  </label>
-                  <button class="btn subscription-btn" type="submit">оставить заявку</button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="design-service__block">
-          <div class="row">
-            <div class="col-sm-7">
-              <div class="design-service__decription">
-                <h3 class="block-list__title">логотип и фирменный стиль</h3>
-                <ul class="block-list">
-                  <li class="block-list-item">Логотип&nbsp;/<span class="service-item-price">&nbsp;от&nbsp;5&nbsp;000&nbsp;руб</span></li>
-                  <li class="block-list-item">Фирменный стиль&nbsp;/<span class="service-item-price">&nbsp;от&nbsp;10&nbsp;000&nbsp;руб</span></li>
-                  <li class="block-list-item">Ребрендинг&nbsp;/<span class="service-item-price">&nbsp;от&nbsp;15&nbsp;000&nbsp;руб</span></li>
-                  <li class="block-list-item">Маркетинг-кит&nbsp;/<span class="service-item-price">&nbsp;от&nbsp;5&nbsp;000&nbsp;руб</span></li>
-                  <li class="block-list-item">Брендбук &nbsp;/<span class="service-item-price">&nbsp;от&nbsp;10&nbsp;000&nbsp;руб</span></li>
-                  <li class="block-list-item">Презентация &nbsp;/<span class="service-item-price">&nbsp;от&nbsp;1&nbsp;000&nbsp;руб</span></li>
-                  <li class="block-list-item">PDF документ &nbsp;/<span class="service-item-price">&nbsp;от&nbsp;1&nbsp;000&nbsp;руб</span></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-sm-5">
-              <div class="design-service__block-form">
-                <p class="block-form__title">Заполните форму</p>
-                <p class="block-form__sub-title">наш менеджер свяжется с вами<br>и обсудит детали</p>
-                <form class="block-form__body" action="" method="POST">
-                  <input type="hidden" name="project_name" value="Marketing">
-                  <input type="hidden" name="admin_email" value="lareta1@yandex.ru">
-                  <input type="hidden" name="form_subject" value="Заявка с главной страницы">
-                  <input type="text" name="name" placeholder="Ваше имя" required>
-                  <input type="text" name="email" placeholder="Ваш телефон или email" required>
-                  <label class="mark-label">
-                    <input type="checkbox" id="mark3"> Даю согласие на обраблтку данных
+                    <input type="checkbox" id="mark1" required> Даю согласие на обраблтку данных
                   </label>
                   <button class="btn subscription-btn" type="submit">оставить заявку</button>
                 </form>
@@ -185,6 +132,396 @@
         </div>
       </div>
     </section>
+    <section class="design-service design-service__block-2">
+      <div class="container">
+        <div class="design-service__block wow slideInUp" data-wow-duration="2s">
+          <div class="row">
+            <div class="col-sm-7 order-sm-2">
+              <div class="design-service__decription special-padding">
+                <h3 class="block-list__title">полиграфический дизайн</h3>
+                <ul class="block-list">
+                  <li class="block-list-item">Визитка&nbsp;/<span class="service-item-price">&nbsp;от&nbsp;500&nbsp;руб</span></li>
+                  <li class="block-list-item">Буклет&nbsp;/<span class="service-item-price">&nbsp;от&nbsp;1&nbsp;000&nbsp;руб</span></li>
+                  <li class="block-list-item">Листовка&nbsp;/<span class="service-item-price">&nbsp;от&nbsp;500&nbsp;руб</span></li>
+                  <li class="block-list-item">Афиша&nbsp;/<span class="service-item-price">&nbsp;от&nbsp;500&nbsp;руб</span></li>
+                  <li class="block-list-item">Баннер&nbsp;/<span class="service-item-price">&nbsp;от&nbsp;1&nbsp;000&nbsp;руб</span></li>
+                  <li class="block-list-item">Календарь &nbsp;/<span class="service-item-price">&nbsp;от&nbsp;500&nbsp;руб</span></li>
+                  <li class="block-list-item">Сертификат &nbsp;/<span class="service-item-price">&nbsp;от&nbsp;500&nbsp;руб</span></li>
+                  <li class="block-list-item">Приглашение &nbsp;/<span class="service-item-price">&nbsp;от&nbsp;1&nbsp;000&nbsp;руб</span></li>
+                  <li class="block-list-item">Штендер &nbsp;/<span class="service-item-price">&nbsp;от&nbsp;1&nbsp;000&nbsp;руб</span></li>
+                  <li class="block-list-item">Сувениры &nbsp;/<span class="service-item-price">&nbsp;от&nbsp;500&nbsp;руб</span></li>
+                  <li class="block-list-item">Ретушь фото &nbsp;/<span class="service-item-price">&nbsp;от&nbsp;500&nbsp;руб</span></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-5 order-sm-1">
+              <div class="design-service__block-form wow slideInUp" data-wow-duration="2s">
+                <p class="block-form__title">Заполните форму</p>
+                <p class="block-form__sub-title">наш менеджер свяжется с вами<br>и обсудит детали</p>
+                <form class="block-form__body" action="php/mail.php" method="POST">
+                  <input type="hidden" name="project_name" value="Marketing">
+                  <input type="hidden" name="admin_email" value="lareta1@yandex.ru">
+                  <input type="hidden" name="form_subject" value="Заявка с главной страницы">
+                  <input type="text" name="name" placeholder="Ваше имя" required>
+                  <input type="text" name="email" placeholder="Ваш телефон или email" required>
+                  <label class="mark-label">
+                    <input type="checkbox" id="mark2" required> Даю согласие на обраблтку данных
+                  </label>
+                  <button class="btn subscription-btn" type="submit">оставить заявку</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="design-service design-service__block-3">
+      <div class="container">
+        <div class="design-service__block">
+          <div class="row">
+            <div class="col-sm-7">
+              <div class="design-service__decription wow slideInUp" data-wow-duration="2s">
+                <h3 class="block-list__title">веб-дизайн</h3>
+                <ul class="block-list">
+                  <li class="block-list-item">Landing page&nbsp;/<span class="service-item-price">&nbsp;от&nbsp;3&nbsp;000&nbsp;руб</span></li>
+                  <li class="block-list-item">Многостраничный сайт&nbsp;/<span class="service-item-price">&nbsp;от&nbsp;5&nbsp;000&nbsp;руб</span></li>
+                  <li class="block-list-item">Интернет-магазин&nbsp;/<span class="service-item-price">&nbsp;от&nbsp;7&nbsp;000&nbsp;руб</span></li>
+                  <li class="block-list-item">Группа Вконтакте&nbsp;/<span class="service-item-price">&nbsp;от&nbsp;2&nbsp;000&nbsp;руб</span></li>
+                  <li class="block-list-item">Мобильные приложения &nbsp;/<span class="service-item-price">&nbsp;от&nbsp;5&nbsp;000&nbsp;руб</span></li>
+                  <li class="block-list-item">Интернет-баннер &nbsp;/<span class="service-item-price">&nbsp;от&nbsp;50&nbsp;руб/шт</span></li>
+                  <li class="block-list-item">Анимированный<br>интернет-баннер&nbsp;/<span class="service-item-price">&nbsp;от&nbsp;100&nbsp;руб/шт</span></li>
+                  <li class="block-list-item">Пост в соц. сетях &nbsp;/<span class="service-item-price">&nbsp;от&nbsp;100&nbsp;руб/шт</span></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-5">
+              <div class="design-service__block-form wow slideInUp" data-wow-duration="2s">
+                <p class="block-form__title">Заполните форму</p>
+                <p class="block-form__sub-title">наш менеджер свяжется с вами<br>и обсудит детали</p>
+                <form class="block-form__body" action="php/mail.php" method="POST">
+                  <input type="hidden" name="project_name" value="Marketing">
+                  <input type="hidden" name="admin_email" value="lareta1@yandex.ru">
+                  <input type="hidden" name="form_subject" value="Заявка с главной страницы">
+                  <input type="text" name="name" placeholder="Ваше имя" required>
+                  <input type="text" name="email" placeholder="Ваш телефон или email" required>
+                  <label class="mark-label">
+                    <input type="checkbox" id="mark3" required> Даю согласие на обраблтку данных
+                  </label>
+                  <button class="btn subscription-btn" type="submit">оставить заявку</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="timeLine"><img class="img-fluid timeLine-fon1" src="img/fon-items/3.png" alt=""><img class="img-fluid timeLine-fon2" src="img/fon-items/2.png" alt=""><img class="img-fluid timeLine-fon3" src="img/fon-items/10.png" alt=""><img class="img-fluid timeLine-fon4" src="img/fon-items/13.png" alt=""><img class="img-fluid timeLine-fon5" src="img/fon-items/6.png" alt="">
+      <h2 class="section-head wow slideInUp" data-wow-duration="2s">как мы работаем</h2>
+      <div class="container">
+        <div class="timeLine__block">
+          <div class="timeLine__block--item wow slideInUp" data-wow-duration="2s">
+            <div class="timeLine__imgColumn timeLine__column timeLine__column-point"><img class="timeLine-icon img-fluid" src="../img/page_design/tl1.png" alt="icon"></div>
+            <div class="timeLine__textColumn timeLine__column">
+              <p>Вы оставляете заявку, мы<br>связываемся с вами и обсуждаем<br>проект, точную цену и сроки<br>выполнения.</p>
+            </div>
+          </div>
+          <div class="timeLine__block--item wow slideInUp" data-wow-duration="2s">
+            <div class="timeLine__imgColumn timeLine__column timeLine__column-point order-md-2"><img class="timeLine-icon img-fluid" src="../img/page_design/tl2.png" alt="icon"></div>
+            <div class="timeLine__textColumn timeLine__column order-2 order-sm-1">
+              <p>Систематизируем данные <br>о конкурентах и проводим анализ<br>рынка. Изучаем ваши пожелания, и <br>определяем потребностей<br>вашего бизнеса.</p>
+            </div>
+          </div>
+          <div class="timeLine__block--item wow slideInUp" data-wow-duration="2s">
+            <div class="timeLine__imgColumn timeLine__column timeLine__column-point"><img class="timeLine-icon img-fluid" src="../img/page_design/tl3.png" alt="icon"></div>
+            <div class="timeLine__textColumn timeLine__column">
+              <p>Создание и презентация<br>первоночальных макетов или<br>эскизов. Внесениее поправок<br>и изменений.</p>
+            </div>
+          </div>
+          <div class="timeLine__block--item wow slideInUp" data-wow-duration="2s">
+            <div class="timeLine__imgColumn timeLine__column timeLine__column-point order-md-2"><img class="timeLine-icon img-fluid" src="../img/page_design/tl4.png" alt="icon"></div>
+            <div class="timeLine__textColumn timeLine__column order-2 order-sm-1">
+              <p>Завершение работы над проектом.<br>Внесенияе конечных изменений.<br>Предоставление работы в удобных<br>для вас форматах.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="design-projects"><img class="img-fluid timeLine-fon6" src="img/fon-items/6.png" alt=""><img class="img-fluid timeLine-fon7" src="img/fon-items/9.png" alt=""><img class="img-fluid timeLine-fon8" src="img/fon-items/8.png" alt=""><img class="img-fluid timeLine-fon9" src="img/fon-items/5.png" alt=""><img class="img-fluid timeLine-fon10" src="img/fon-items/11.png" alt="">
+      <h2 class="section-head wow slideInUp" data-wow-duration="2s">наши проекты</h2>
+      <div class="container">
+        <div class="design-projects__block">
+          <div class="carousel slide" id="carouselProjects" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active"><img class="d-block w-100" src="img/page_design/prj1.jpg" alt="Первый слайд"></div>
+              <div class="carousel-item"><img class="d-block w-100" src="img/page_design/prj2.jpg" alt="Второй слайд"></div>
+              <div class="carousel-item"><img class="d-block w-100" src="img/page_design/prj3.jpg" alt="Третий слайд"></div>
+              <div class="carousel-item"><img class="d-block w-100" src="img/page_design/prj4.jpg" alt="Третий слайд"></div>
+            </div><a class="carousel-control-prev" href="#carouselProjects" role="button" data-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span></a><a class="carousel-control-next" href="#carouselProjects" role="button" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="our_clients">
+      <div class="container">
+        <h2 class="section-head wow slideInUp" data-wow-duration="1s">наши клиенты</h2>
+        <div class="our_clients-block-mobil d-sm-none">
+          <div class="carousel slide d-inline-block" id="carousel" data-ride="carousel">
+            <!-- Индикаторы-->
+            <ol class="carousel-indicators">
+              <li class="active" data-target="#carousel" data-slide-to="0"></li>
+              <li data-target="#carousel" data-slide-to="1"></li>
+              <li data-target="#carousel" data-slide-to="2"></li>
+              <li data-target="#carousel" data-slide-to="3"></li>
+              <li data-target="#carousel" data-slide-to="4"></li>
+              <li data-target="#carousel" data-slide-to="5"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active"><img class="img-fluid" src="img/clients/cl1.png" alt="наши клиенты"></div>
+              <div class="carousel-item"><img class="img-fluid" src="img/clients/cl2.png" alt="наши клиенты"></div>
+              <div class="carousel-item"><img class="img-fluid" src="img/clients/cl3.png" alt="наши клиенты"></div>
+              <div class="carousel-item"><img class="img-fluid" src="img/clients/cl4.png" alt="наши клиенты"></div>
+              <div class="carousel-item"><img class="img-fluid" src="img/clients/cl5.png" alt="наши клиенты"></div>
+              <div class="carousel-item"><img class="img-fluid" src="img/clients/cl6.png" alt="наши клиенты"></div>
+            </div>
+          </div>
+        </div>
+        <div class="our_clients-block d-none d-sm-block">
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="client-item"><img class="img-fluid" src="img/clients/cl1.png" alt="наши клиенты"></div>
+            </div>
+            <div class="col-sm-4">
+              <div class="client-item"><img class="img-fluid" src="img/clients/cl2.png" alt="наши клиенты"></div>
+            </div>
+            <div class="col-sm-4">
+              <div class="client-item"><img class="img-fluid" src="img/clients/cl3.png" alt="наши клиенты"></div>
+            </div>
+            <div class="col-sm-4">
+              <div class="client-item"><img class="img-fluid" src="img/clients/cl4.png" alt="наши клиенты"></div>
+            </div>
+            <div class="col-sm-4">
+              <div class="client-item"><img class="img-fluid" src="img/clients/cl5.png" alt="наши клиенты"></div>
+            </div>
+            <div class="col-sm-4">
+              <div class="client-item"><img class="img-fluid" src="img/clients/cl6.png" alt="наши клиенты"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="reviews" id="reviews"><img class="img-fluid timeLine-fon1" src="img/fon-items/3.png" alt=""><img class="img-fluid timeLine-fon2" src="img/fon-items/2.png" alt=""><img class="img-fluid timeLine-fon3" src="img/fon-items/10.png" alt=""><img class="img-fluid timeLine-fon4" src="img/fon-items/13.png" alt=""><img class="img-fluid timeLine-fon5" src="img/fon-items/6.png" alt="">
+      <h2 class="section-head wow slideInUp" data-wow-duration="2s">Отзывы</h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 offset-sm-2">
+            <div class="carousel slide" id="carouselReviews" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li class="active" data-target="#carouselReviews" data-slide-to="0"></li>
+                <li data-target="#carouselReviews" data-slide-to="1"></li>
+                <li data-target="#carouselReviews" data-slide-to="2"></li>
+                <li data-target="#carouselReviews" data-slide-to="3"></li>
+                <li data-target="#carouselReviews" data-slide-to="4"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="review-text">
+                    <p> Ребята сделали отличный макет сайта, учли все пожелания руководства завода. Получился довольно удобный интерфейс, информация размещена как надо, ничего лишнего. Просили простой и информативный сайт, получили что хотели, за что выражаем благодарность.</p>
+                    <div class="reviews-client-logo"><img class="img-fluid" src="img/page_design/rev1.png"></div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="review-text">
+                    <p> Всё очень просто, ничего лишнего. Для компании, занимающейся строительством домов, не требуется супер крутой дизайн, поэтому нас вполне устраивает то, что есть. Самое главное, получился читабельный текст, нет ничего отвлекающего – информация подаётся правильно. Поэтому нам понравилось работать с этой веб-студией.</p>
+                    <div class="reviews-client-logo"><img class="img-fluid" src="img/page_design/rev5.png"></div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="review-text">
+                    <p> Заказывали здесь макет сайта и логотип компании. Лого на наш взгляд выглядит нормально. Макет сайта хорош тем, что продумана логика подачи информации. Пользователь может быстро выбрать нужную услугу, ознакомиться с ней оставить заявку сразу. Выглядит приятно, не пестрит картинками, лаконично и по делу. Кстати, понравились подобранные цвета, которые везде теперь используются.</p>
+                    <div class="reviews-client-logo"><img class="img-fluid" src="img/page_design/rev3.png"></div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="review-text">
+                    <p> Теперь у нас появился полностью продуманный фирменный стиль, разработан брендбук, в котором все элементы стандартизированы. Это можно заметить по нашему сайту (макет тоже заказывали в MP). Располагающая цветовая палитра, правильное сочетание. Далее мы сможем с умом использовать фирменный стиль в работе, презентационных и рекламных материалах.</p>
+                    <div class="reviews-client-logo"><img class="img-fluid" src="img/page_design/rev4.png"></div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="review-text">
+                    <p> Группа компаний «Morsen» выражает благодарность за проведение ряда полиграфических работ: в Marketing Place были сделаны отличные афиши, календари, а также дизайн для группы ВК. Довольны качеством, рады сотрудничеству!</p>
+                    <div class="reviews-client-logo"><img class="img-fluid" src="img/page_design/rev2.png"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="cta text-center" id="cta">
+      <h2 class="section-head wow slideInUp" data-wow-duration="1s">ОСТАЛИСЬ ВОПРОСЫ?<br>ЗАДАЙТЕ ИХ НАШЕМУ СПЕЦИАЛИСТУ</h2>
+      <div class="container">
+        <form class="contact-form cta-form" id="form_2" action="php/mail_form_2.php" method="POST">
+          <input type="hidden" name="project_name" value="Marketing">
+          <input type="hidden" name="admin_email" value="lareta1@yandex.ru">
+          <input type="hidden" name="form_subject" value="Заявка на консультанта">
+          <div class="row">
+            <div class="col-md-6">
+              <input type="text" name="name" placeholder="Ваше имя" required>
+            </div>
+            <div class="col-md-6">
+              <input type="text" name="email" placeholder="Ваш email" required>
+            </div>
+            <div class="col-md-6 offset-md-3">
+              <button class="btn offer-btn" id="cta-btn" type="submit">заполнить форму</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section class="design-cards">
+      <h2 class="section-head wow slideInUp" data-wow-duration="2s">что мы еще можем<br>сделать для вашего бизнеса</h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 offset-sm-2 col-md-4 offset-md-0">
+            <div class="wow slideInUp" id="card1" data-wow-duration="2s">
+              <div class="card__title">
+                <h5>ПРОДВИЖЕНИЕ<br> В СОЦИАЛЬНЫХ<br> СЕТЯХ</h5>
+              </div>
+              <div class="card__text">
+                <p>Продвижение в ВКонтакте, Instagram, Facebook<br> под ключ</p>
+              </div>
+              <div class="card__click"><a href="#"><img class="img-fluid" src="img/page_design/click.png" alt=""></a></div>
+            </div>
+          </div>
+          <div class="col-sm-8 offset-sm-2 col-md-4 offset-md-0">
+            <div class="wow slideInUp" id="card3" data-wow-duration="2s">
+              <div class="card__title">
+                <h5>Создание сайтов<br> «под ключ»</h5>
+              </div>
+              <div class="card__text">
+                <p>Создаем современные сайты по демократичным ценам,адаптированные под все устройства и браузеры</p>
+              </div>
+              <div class="card__click"><a href="creation_sites.html"><img class="img-fluid" src="img/page_design/click.png" alt=""></a></div>
+            </div>
+          </div>
+          <div class="col-sm-8 offset-sm-2 col-md-4 offset-md-0">
+            <div class="wow slideInUp" id="card2" data-wow-duration="2s">
+              <div class="card__title">
+                <h5>Seo продвижение сайтов</h5>
+              </div>
+              <div class="card__text">
+                <p>Бесплатные переходы на Ваш сайт из поисковой выдачи Яндекса и Google уже через 2 недели с начала продвижения</p>
+              </div>
+              <div class="card__click"><a href="#"><img class="img-fluid" src="img/page_design/click.png" alt=""></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="wrapper__info wow slideInUp" data-wow-duration="2s">
+          <div class="container">
+            <h3 class="article__head">Узнаваемый дизайн за невысокую цену</h3>
+            <p class="article__text">Яркий, запоминающийся и продающий дизайн помогает представителю целевой аудитории должным образом воспринимать любой месседж компании. Правильное сочетание цветов в совокупности с технической подкованностью дизайнера позволяет создавать качественную картинку. При получении заказа специалист задаёт необходимые вопросы, создаёт эскиз и макет, затем после согласования реализует идею. Так действуют и профессионалы студии Marketing Place, разрабатывая уникальный дизайн для своих клиентов.</p>
+            <h3 class="article__head">Разработка логотипа и фирменного стиля</h3>
+            <p class="article__text">Логотип — визитная карточка компании. Узнаваемое лого требуется любому проекту — от веб-сервиса и интернет-магазина до крупной компании. Осуществляется комплексная поддержка визуальной составляющей бренда, которая считается основой. Часто фирме нужен полный ребрендинг, более простые ситуации — предполагают выполнение конкретных задач (примером служит создание презентации с правильным оформлением, праздничного письма, документов). Брендбук становится подробным руководством по использованию фирменного стиля. Стоимость логотипа может быть включена в общую сумму заказа.</p>
+            <h3 class="article__head">Полиграфический дизайн</h3>
+            <p class="article__text">Сотрудникам полиграфии нередко свойственна халатность при работе с внушительным количеством заказов, поэтому разработка полиграфического дизайна поручается сторонним профессионалам. Дизайнер работает с рекламными материалами — афиши, листовки, приглашения. В имиджевой рекламной продукции приветствуется креативный подход. Разрабатываются буклеты и другие презентационные материалы. Необходимы также рядовые несложные работы — ретушь фотографий с подготовкой к печати.</p>
+            <h3 class="article__head">Веб-дизайн: оформление сайтов и приложений</h3>
+            <p class="article__text">Наибольшее количество сложностей доставляет веб-дизайн сайта: требуется продумать интерфейс, правильно подобрать цветовую гамму для продвижения товара. Дизайнер работает с социальными сетями, делая шапки в пабликах, аватары, оформление страниц. К веб-дизайну относится работа с контекстной рекламой (создание анимированных интернет-баннеров). Посты в соц. сетях также создаются не без дизайнерской мысли.</p>
+            <h3 class="article__head">Быстрый заказ дизайн-проекта</h3>
+            <p class="article__text">Веб-студия Marketing Place предлагает заказать дизайн на выгодных условиях. Наша команда работает с интернет-проектами; занимается рекламными материалами и поддержкой узнаваемости бренда. Мы придерживаемся основ хорошего дизайна:<br>                            · оригинальная идея, творческий подход;<br>                            · четкое согласование эскизов перед работой;<br>                            · своевременное выполнение работы;<br>                            · отличное эмоциональное состояние дизайнера.<br>                            Дизайнеры всегда работают в хорошем настроении, реализуют креативные идеи, не допускают разочарования заказчика. Ориентировочные цены указаны на странице, стоимость заказа обсуждается в индивидуальном порядке. Постоянным клиентам мы рады сделать скидку. Чтобы связаться с сотрудником MP, оставьте заявку — проект будет готов строго в установленные сроки!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="map-block">
+      <div class="contact-window">
+        <ul class="map-contact">
+          <li class="contact-adress">
+            <p class="map-contact__title">Адрес</p>
+            <p class="map-contact__text"> г.&nbsp;Череповец,&nbsp;ул.&nbsp;Ленина,&nbsp;50</p>
+          </li>
+          <li class="contact-phone">
+            <p class="map-contact__title">телефон</p>
+            <p class="map-contact__text">8&nbsp;953&nbsp;512&nbsp;777&nbsp;0 </p>
+          </li>
+          <li class="contact-email">
+            <p class="map-contact__title">E-MAIL</p>
+            <p class="map-contact__text"> Marketing-place@yandex.ru</p>
+          </li>
+        </ul>
+        <div class="social-icons"><a class="sprite sprite-vk" href="https://vk.com/wsmarketingplace"></a><a class="sprite sprite-facebook" href="#"></a><a class="sprite sprite-instagramm" href="#"></a></div>
+      </div>
+      <div id="map"></div>
+      <script>
+        function initMap() {    
+        var center = {lat: 59.124700, lng: 37.928706};
+        var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 17,
+        center: center
+        });
+        
+        var marker = new google.maps.Marker({
+        position: center,
+        map: map,
+        title: "ул. Ленина, 50"
+        });
+        }
+      </script>
+      <script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvX6LBP5vPcv5WeKT3DurPtnQ1XIA50Ws&amp;callback=initMap"></script>
+    </section>
+    <footer class="d-none d-lg-block" id="footer">
+      <div class="container">
+        <div class="footer-content">
+          <!--column aboutus-->
+          <div class="column column-about">
+            <h4 class="column-title">компания					</h4>
+            <ul class="aboutus block-list">
+              <li class="block-list-item"><a class="footer-link" href="#">О компании</a></li>
+              <li class="block-list-item"><a class="footer-link" href="#">Портфолио</a></li>
+              <li class="block-list-item"><a class="footer-link" href="creation_sites.html#reviews" rel="m_PageScroll2id">Отзывы</a></li>
+              <li class="block-list-item"><a class="footer-link" href="#footer">Контакты</a></li>
+            </ul>
+          </div>
+          <!--column service-->
+          <div class="column column-service">
+            <h4 class="column-title">Услуги</h4>
+            <ul class="aboutus block-list">
+              <li class="block-list-item"><a class="footer-link" href="design.html">Создание сайтов</a></li>
+              <li class="block-list-item"><a class="footer-link" href="design.html">Дизайн</a></li>
+              <li class="block-list-item"><a class="footer-link" href="smm-service.html">SMM</a></li>
+              <li class="block-list-item"><a class="footer-link" href="#">SEO оптимизация</a></li>
+              <li class="block-list-item"><a class="footer-link" href="#">Yandex Direct</a></li>
+              <li class="block-list-item"><a class="footer-link" href="#">Google Adwords</a></li>
+              <li class="block-list-item"><a class="footer-link" href="#">E-mail маркетинг</a></li>
+            </ul>
+          </div>
+          <!--column contacts-->
+          <div class="column column-contact">
+            <h4 class="column-title">Контакты					</h4>
+            <ul class="aboutus block-list pb-4">
+              <li class="block-list-item">Адрес:&nbsp; г.&nbsp;Череповец,&nbsp;ул.&nbsp;Ленина,&nbsp;50</li>
+              <li class="block-list-item">Тел:&nbsp;&nbsp;<a class="footer-link" href="tel:+79535127770">+7&nbsp;953&nbsp;512&nbsp;777&nbsp;0</a></li>
+              <li class="block-list-item">Email:&nbsp;&nbsp;<a class="footer-link" href="mailto:Marketing-place@yandex.ru">Marketing-place@yandex.ru</a></li>
+            </ul>
+            <h4 class="column-title">наш прайс PDF</h4><a class="btn-link" href="#">Посмотреть</a>
+          </div>
+          <!--column form-->
+          <div class="column column-form">
+            <h4 class="column-title">ПОДПИСАТЬСЯ НА НАШУ РАССЫЛКУ</h4>
+            <form class="contact-form" id="form_3" action="php/mail_form_3.php" method="POST">
+              <input type="hidden" name="project_name" value="Marketing">
+              <input type="hidden" name="admin_email" value="lareta1@yandex.ru">
+              <input type="hidden" name="form_subject" value="Заявка на подписку">
+              <input type="text" name="name" placeholder="Ваше имя" required>
+              <input type="text" name="email" placeholder="Ваш email" required>
+              <button class="btn subscription-btn" type="submit">Подписаться</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <section id="back-top"><a href="#top" rel="m_PageScroll2id"><span><i class="fas fa-angle-double-up"></i></span></a></section>
     <script src="libs/jquery/jquery-3.0.0.min.js"></script>
     <script src="libs/bootstrap/js/bootstrap.min.js"></script>
     <script src="libs/pagescroll2id/jquery.malihu.PageScroll2id.js"></script>
@@ -193,5 +530,10 @@
     <script src="js/vertical-menu.js"></script>
     <script src="js/form.js"></script>
     <script src="js/main.js"></script>
+    <script>
+      $(document).ready(function() {
+      $("body").css("opacity", "1");
+      });
+    </script>
   </body>
 </html>
